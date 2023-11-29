@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inscription</title>
+    <link rel="stylesheet" type="text/css" href="inscription.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="LienTitre" href="#">Accueil</a>
+            <a class="LienTitre" href="#">Courses</a>
+            <a class="LienTitre" href="#">Coach</a>
+            <a class="LienTitre" href="#">Inscription</a>
+        </nav>
+    </header>
+    
+    <h1>Inscription</h1>
+    
+    <form id="form">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required minlength="3" placeholder="Entrez votre nom">
+        
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required minlength="3" placeholder="Entrez votre prénom">
+        
+        <label for="dateNaissance">Date de naissance :</label>
+        <input type="date" id="dateNaissance" name="dateNaissance" required>
+        
+        <label for="telephone">Téléphone :</label>
+        <input type="tel" id="telephone" name="telephone" required pattern="[0-9]{10}" placeholder="Entrez votre téléphone">
+        
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required placeholder="Entrez votre email">
+        
+        <label for="motdepasse">Mot de passe :</label>
+        <input type="password" id="motdepasse" name="motdepasse" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" placeholder="Entrez votre mot de passe">
+        
+        <label for="confirmationMotdepasse">Confirmation de mot de passe :</label>
+        <input type="password" id="confirmationMotdepasse" name="confirmationMotdepasse" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" placeholder="Confirmez votre mot de passe">
+        
+        <label for="adresse">Adresse :</label>
+        <textarea id="adresse" name="adresse" required placeholder="Entrez votre adresse"></textarea>
+        
+        <button class="btn" type="submit">S'inscrire</button>
+        <button class="btn" type="reset">Annuler</button>
+    </form>
+    
+    <footer>
+        <p>tous les droits sont réservés pour oumaima najjar 2023</p>
+    </footer>
+</body>
+</html>
